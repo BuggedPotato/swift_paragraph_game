@@ -140,6 +140,7 @@ func charPrinter( _ str: String, interval: Double = 0.05 )
     {
         // print( workItem.isCancelled );
         print( char, terminator: "" );
+    	fflush(stdout);
         if char == "."
         {
             Thread.sleep( forTimeInterval: realInterval * 6 );
